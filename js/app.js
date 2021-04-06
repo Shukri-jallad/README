@@ -3,8 +3,10 @@ console.log(userDate);
 
 userDate = userDate.toLowerCase();
 
+let score = 0;
 if(userDate == 'y' || 'yes'){
-        alert('Yes actually I am!')
+        alert('Yes actually I am!');
+        score ++;
 
 }else if(userDate == 'n' || 'no'){
         alert('Developer is actually male');
@@ -15,10 +17,11 @@ if(userDate == 'y' || 'yes'){
 let userTime = prompt('Does the developer live in Jordan?');
 console.log (userTime);
 
-switch(userDate){
+switch(userTime){
     case 'y':
     case 'yes':
         alert('Yes actually I do!');
+        score ++;
     break;
 
     case 'n':
@@ -38,6 +41,7 @@ switch(userLocation){
     case 'y':
     case 'yes':
         alert('Yes actually I do!');
+        score ++;
     break;
 
     case 'n':
@@ -53,10 +57,11 @@ console.log (userActivity);
 
 userActivity = userActivity.toLowerCase();
 
-switch(userDate){
+switch(userActivity){
     case 'y':
     case 'yes':
         alert('Yes actually I do!');
+        score ++;
     break;
 
     case 'n':
@@ -72,10 +77,11 @@ console.log (userAge);
 
 userAge = userAge.toLowerCase();
 
-switch(userDate){
+switch(userAge){
     case 'y':
     case 'yes':
         alert('Yes I do!');
+        score ++;
     break;
 
     case 'n':
@@ -83,7 +89,45 @@ switch(userDate){
         alert('Sometimes true');
     break;
     default:
-        alert('Try again later')
+        alert('Try again later');
 }
 
+i=0;
+while (i < 4){
+userGuess = prompt('What\'s my favorite number (single digit)');
+userGuess = parseInt(userGuess);
+
+if(userGuess < 7){
+    alert('Go higher');
+    i++;
+}else if(userGuess > 7){
+    alert('Go lower');
+    i++;
+}else if(userGuess = 7){
+    alert('You are correct!');
+    score ++;
+    i=4;
+}
+}
+alert('sorry, try again later');
+
+let myFavoritfood = ['cake' , 'pizza' , 'shawarma' , 'brocolli' , 'lettuce' , 'tomato'];
+alert('Guess my favorite food, 3 are correct!');
+alert('Cake, Pizza, Lettuce, Brocolli, Shawarma, Tomato. Choose any of 3');
+
+i=0;
+while(i<6){
+    userMind = prompt('Take a guess?');
+    userMind = userMind.toLowerCase(userMind);
+    if(userMind === myFavoritfood[3] || userMind === myFavoritfood[4] || userMind === myFavoritfood[5]){
+    alert('You are correct!');
+    score ++;
+    i=6;
+}else{
+    alert('Try again :)');
+    i++;
+}
+}
+
+alert('Your score is: ' + score);
 alert('Thank you very much for taking my simple quiz, learn more about me in the text below!');
