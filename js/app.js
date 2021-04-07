@@ -113,26 +113,30 @@ function question5(){
 }
 question5();
 
-i=0;
-while (i < 4){
-userGuess = prompt('What\'s my favorite number (single digit)');
-userGuess = parseInt(userGuess);
 
-if(userGuess < 7){
-    alert('Go higher');
-    i++;
-}else if(userGuess > 7){
-    alert('Go lower');
-    i++;
-}else if(userGuess = 7){
-    alert('You are correct!');
-    score ++;
-    i=4;
-}else{
-    alert('sorry, try again later');
-
+function question6(){
+    i=0;
+    while (i < 4){
+    userGuess = prompt('What\'s my favorite number (single digit)');
+    userGuess = parseInt(userGuess);
+    
+    if(userGuess < 7){
+        alert('Go higher');
+        i++;
+    }else if(userGuess > 7){
+        alert('Go lower');
+        i++;
+    }else if(userGuess = 7){
+        alert('You are correct!');
+        score ++;
+        i=4;
+    }else{
+        alert('sorry, try again later');
+    
+    }
+    }
 }
-}
+question6();
 
 
 let myFavoritfood = ['cake' , 'pizza' , 'shawarma' , 'brocolli' , 'lettuce' , 'tomato'];
