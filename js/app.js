@@ -138,24 +138,26 @@ function question6(){
 }
 question6();
 
-
-let myFavoritfood = ['cake' , 'pizza' , 'shawarma' , 'brocolli' , 'lettuce' , 'tomato'];
-alert('Guess my favorite food, 3 are correct!');
-alert('Cake, Pizza, Lettuce, Brocolli, Shawarma, Tomato. Choose any of 3');
-
-i=0;
-while(i<6){
-    userMind = prompt('Take a guess?');
-    userMind = userMind.toLowerCase(userMind);
-    if(userMind === myFavoritfood[3] || userMind === myFavoritfood[4] || userMind === myFavoritfood[5]){
-    alert('You are correct!');
-    score ++;
-    i=6;
-}else{
-    alert('Try again :)');
-    i++;
+function question7(){
+    let myFavoritfood = ['cake' , 'pizza' , 'shawarma' , 'brocolli' , 'lettuce' , 'tomato'];
+    alert('Guess my favorite food, 3 are correct!');
+    alert('Cake, Pizza, Lettuce, Brocolli, Shawarma, Tomato. Choose any of 3');
+    
+    i=0;
+    while(i<6){
+        userMind = prompt('Take a guess?');
+        userMind = userMind.toLowerCase(userMind);
+        if(userMind === myFavoritfood[3] || userMind === myFavoritfood[4] || userMind === myFavoritfood[5]){
+        alert('You are correct!');
+        score ++;
+        i=6;
+    }else{
+        alert('Try again :)');
+        i++;
+    }
+    }
 }
-}
+question7();
 
 alert('Your score is: ' + score);
 alert('Thank you very much for taking my simple quiz, learn more about me in the text below!');
