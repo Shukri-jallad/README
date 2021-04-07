@@ -1,3 +1,15 @@
+# Lab: 04 - Pair Programming: More extensions to About Me
+
+## In this lab me and Shukri wrapped all seven questions into function according the follwing roles:
+
+### Driver : Duaa Abu-dhaim
+[The fork from shukri repository](https://github.com/duaa9094/README)
+
+### Navigator : Shukri jallad
+[shukri repository](https://github.com/Shukri-jallad/README)
+
+------------------------------------------------------------------------------------------------------------------------------
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Shukri-jallad/README/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
@@ -35,3 +47,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
