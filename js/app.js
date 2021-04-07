@@ -22,23 +22,27 @@ function question1(){
 }
 question1();
 
-let userTime = prompt('Does the developer live in Jordan?');
-console.log (userTime);
-
-switch(userTime){
-    case 'y':
-    case 'yes':
-        alert('Yes actually I do!');
-        score ++;
-    break;
-
-    case 'n':
-    case 'no':
-        alert('Developer actually lives in Jordan');
-    break;
-    default:
-        alert('Try again later')
+function question2(){
+    let userTime = prompt('Does the developer live in Jordan?');
+    console.log (userTime);
+    
+    switch(userTime){
+        case 'y':
+        case 'yes':
+            alert('Yes actually I do!');
+            score ++;
+        break;
+    
+        case 'n':
+        case 'no':
+            alert('Developer actually lives in Jordan');
+        break;
+        default:
+            alert('Try again later')
+    }
 }
+
+question2();
 
 let userLocation = prompt('Does the developer like chocolate?');
 console.log (userLocation);
