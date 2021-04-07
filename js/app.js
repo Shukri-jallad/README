@@ -1,18 +1,26 @@
-let userDate = prompt("Is the developer male?");
-console.log(userDate);
 
-userDate = userDate.toLowerCase();
 
 let score = 0;
-if(userDate == 'y' || 'yes'){
-        alert('Yes actually I am!');
-        score ++;
 
-}else if(userDate == 'n' || 'no'){
-        alert('Developer is actually male');
-}else{
-        alert('Try again later')
+function question1(){
+    let userDate = prompt("Is the developer male?");
+    console.log(userDate);
+    
+    userDate = userDate.toLowerCase();
+    
+    
+    
+    if(userDate == 'y' || 'yes'){
+            alert('Yes actually I am!');
+            score ++;
+    
+    }else if(userDate == 'n' || 'no'){
+            alert('Developer is actually male');
+    }else{
+            alert('Try again later')
+    }
 }
+question1();
 
 let userTime = prompt('Does the developer live in Jordan?');
 console.log (userTime);
