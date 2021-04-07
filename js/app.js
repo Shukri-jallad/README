@@ -67,25 +67,28 @@ function question3(){
 }
 question3();
 
-let userActivity = prompt('Does the developer like football?');
-console.log (userActivity);
-
-userActivity = userActivity.toLowerCase();
-
-switch(userActivity){
-    case 'y':
-    case 'yes':
-        alert('Yes actually I do!');
-        score ++;
-    break;
-
-    case 'n':
-    case 'no':
-        alert('Developer actually likes football');
-    break;
-    default:
-        alert('Try again later')
+function question4(){
+    let userActivity = prompt('Does the developer like football?');
+    console.log (userActivity);
+    
+    userActivity = userActivity.toLowerCase();
+    
+    switch(userActivity){
+        case 'y':
+        case 'yes':
+            alert('Yes actually I do!');
+            score ++;
+        break;
+    
+        case 'n':
+        case 'no':
+            alert('Developer actually likes football');
+        break;
+        default:
+            alert('Try again later')
+    }
 }
+question4();
 
 let userAge = prompt('Does the developer like music?');
 console.log (userAge);
