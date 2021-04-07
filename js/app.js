@@ -90,25 +90,28 @@ function question4(){
 }
 question4();
 
-let userAge = prompt('Does the developer like music?');
-console.log (userAge);
-
-userAge = userAge.toLowerCase();
-
-switch(userAge){
-    case 'y':
-    case 'yes':
-        alert('Yes I do!');
-        score ++;
-    break;
-
-    case 'n':
-    case 'no':
-        alert('Sometimes true');
-    break;
-    default:
-        alert('Try again later');
+function question5(){
+    let userAge = prompt('Does the developer like music?');
+    console.log (userAge);
+    
+    userAge = userAge.toLowerCase();
+    
+    switch(userAge){
+        case 'y':
+        case 'yes':
+            alert('Yes I do!');
+            score ++;
+        break;
+    
+        case 'n':
+        case 'no':
+            alert('Sometimes true');
+        break;
+        default:
+            alert('Try again later');
+    }
 }
+question5();
 
 i=0;
 while (i < 4){
