@@ -107,9 +107,12 @@ if(userGuess < 7){
     alert('You are correct!');
     score ++;
     i=4;
+}else{
+    alert('sorry, try again later');
+
 }
 }
-alert('sorry, try again later');
+
 
 let myFavoritfood = ['cake' , 'pizza' , 'shawarma' , 'brocolli' , 'lettuce' , 'tomato'];
 alert('Guess my favorite food, 3 are correct!');
