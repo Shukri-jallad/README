@@ -44,25 +44,28 @@ function question2(){
 
 question2();
 
-let userLocation = prompt('Does the developer like chocolate?');
-console.log (userLocation);
-
-userLocation = userLocation.toLowerCase();
-
-switch(userLocation){
-    case 'y':
-    case 'yes':
-        alert('Yes actually I do!');
-        score ++;
-    break;
-
-    case 'n':
-    case 'no':
-        alert('The developer actually likes chocolate');
-    break;
-    default:
-        alert('Try again later')
+function question3(){
+    let userLocation = prompt('Does the developer like chocolate?');
+    console.log (userLocation);
+    
+    userLocation = userLocation.toLowerCase();
+    
+    switch(userLocation){
+        case 'y':
+        case 'yes':
+            alert('Yes actually I do!');
+            score ++;
+        break;
+    
+        case 'n':
+        case 'no':
+            alert('The developer actually likes chocolate');
+        break;
+        default:
+            alert('Try again later')
+    }
 }
+question3();
 
 let userActivity = prompt('Does the developer like football?');
 console.log (userActivity);
